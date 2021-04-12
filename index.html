@@ -296,7 +296,7 @@
                     </svg>
                     </a></li>
                     <li class="grid-item clients-grid-item">
-                        <a class="cliens-item-link"  target="_blank" rel="noopener noreferer"href="">
+                        <a class="cliens-item-link"  target="_blank" rel="noopener noreferer" href="">
                             <svg class="icon" width=40px height=52px>
                                 <use href="./images/sprite.svg#icon-logo2"></use>
                             </svg>
@@ -378,11 +378,12 @@
         <b class="footer-form-title">Подпишитесь на рассылку</b>
             <div class="footer-form">
                 <div>
-                    <form class="form" autocomplete="off">
+                    <form>
                         <label class="form-field">
                             <input type="text" class="form-input" name="E-mail" placeholder="E-mail " />
                            
                         </label>
+                   
                 </div>
         <div>
             <button class="subscribe-button" type="submit">Подпиcаться</button>
@@ -425,12 +426,24 @@
                     <use href="./images/icons.svg#icon-modal-envelope"></use>
                 </svg>
             </label>
-            <label class="comments-field-modal">
+            
+            <label class="comments-field-modal" >
                 <span class="form-name">Комментарий</span>
-                <textarea name="feedback" rows="7" placeholder="Введите текст"></textarea>
+                <textarea name="feedback" rows="5" placeholder="Введите текст" ></textarea>
             </label>
-
-        </form>
+            <div class="license-agreement">
+            <label class="checkbox-label">
+                <input class="checkbox" type="checkbox" name="agreement" value="Соглашаюсь с рассылкой и принимаю Условия договора" >
+                <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю 
+                <a class="license-link" href="">  Условия договора</a>
+            </label>
+            </div>
+            </form>
+            <div class="form-button-wrapper">
+            <button class="form-button" type="submit">Отправить</button>
+            </div>
+        
       <button class="modal-close-button" data-modal-close> <span class="close-symbol">&times</span> </button>  
     </div>
 </div>
