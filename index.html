@@ -375,16 +375,62 @@
         </ul>
     </div>
     <div>
-        <b>Подпишитесь на рассылку</b>
-        <form action=""></form>
-        <button class="subscribe-button" type="submit">Подпиcаться</button>
+        <b class="footer-form-title">Подпишитесь на рассылку</b>
+            <div class="footer-form">
+                <div>
+                    <form class="form" autocomplete="off">
+                        <label class="form-field">
+                            <input type="text" class="form-input" name="E-mail" placeholder="E-mail " />
+                           
+                        </label>
+                </div>
+        <div>
+            <button class="subscribe-button" type="submit">Подпиcаться</button>
+        </div>
+        
+        </div>
     </div>
     </div>
     </div>
 </footer>
-
+<!-- Модальное окно -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+        <h2 class="modal-window-title">Оставьте свои данные, мы вам перезвоним</h2>
+       
+        <form class="modal-window-form" autocomplete="off">
+           
+            <label class="form-field-modal" >
+                <span class="form-name">Имя</span>
+                <input class="form-input-modal" type="text" name="name" placeholder=" " autocomplete="off">
+                <svg class="form-icon-modal" width=12 height=12>
+                    <use href="./images/icons.svg#icon-modal-user"></use>
+                </svg>
+                
+                
+            </label>
+
+            <label class="form-field-modal">
+                <span class="form-name">Телефон</span>
+                <input class="form-input-modal" type="tel" name="tel" placeholder=" ">
+                <svg class="form-icon-modal" width=13 height=13>
+                    <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+            </label>
+
+            <label class="form-field-modal">
+                <span class="form-name">Почта</span>
+                <input class="form-input-modal" type="email" name="email" placeholder=" ">
+                <svg class="form-icon-modal" width=15 height=12>
+                    <use href="./images/icons.svg#icon-modal-envelope"></use>
+                </svg>
+            </label>
+            <label class="comments-field-modal">
+                <span class="form-name">Комментарий</span>
+                <textarea name="feedback" rows="7" placeholder="Введите текст"></textarea>
+            </label>
+
+        </form>
       <button class="modal-close-button" data-modal-close> <span class="close-symbol">&times</span> </button>  
     </div>
 </div>
