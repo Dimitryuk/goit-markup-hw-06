@@ -236,7 +236,14 @@ header {
 }
 /* наши качества */
 .hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .advantages-item {
@@ -244,7 +251,7 @@ header {
 }
 .advantages-thumb {
   width: 270px;
-  height: 170px;
+  height: 120px;
   background-color: #f5f4fa;
   display: flex;
   align-items: center;
@@ -653,13 +660,13 @@ address {
 }
 .form-icon-modal {
   position: absolute;
-  top: 55%;
+  top: 58%;
   left: 55px;
   fill: #212121;
 }
 .modal-window-form {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .form-field-modal:focus-within > .form-icon-modal {
   fill: var(--accent-color);
