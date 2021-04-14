@@ -604,8 +604,7 @@ address {
 
 .modal {
   position: absolute;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -638,11 +637,10 @@ address {
 }
 
 .form-input-modal {
-  display: inline-block;
   width: 448px;
   height: 40px;
-  margin-left: 41px;
   padding-left: 40px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
@@ -651,22 +649,22 @@ address {
 }
 
 .form-field-modal {
-  display: block;
   position: relative;
 }
 .form-name {
-  display: block;
-  margin-left: 41px;
 }
 .form-icon-modal {
   position: absolute;
-  top: 58%;
-  left: 55px;
+  top: 60%;
+  right: 425px;
+
   fill: #212121;
 }
 .modal-window-form {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: center;
 }
 .form-field-modal:focus-within > .form-icon-modal {
   fill: var(--accent-color);
@@ -749,7 +747,6 @@ address {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-left: 41px;
 }
 .form-name {
   margin-top: 10px;
@@ -758,8 +755,6 @@ address {
 .comments-field-modal > textarea {
   display: inline-block;
   width: 448px;
-
-  margin-left: 41px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -776,9 +771,9 @@ textarea {
   display: block;
 }
 .license-agreement {
-  padding-left: 52px;
+  /* padding-left: 52px;
   padding-right: 52px;
-  padding-top: 20px;
+  padding-top: 20px; */
 }
 .license-link {
   color: #2196f3;
@@ -822,8 +817,8 @@ textarea {
   font-size: 16px;
   line-height: 30px;
   color: var(--primary-white-color);
-  margin-left: 165px;
-  padding: auto;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -834,7 +829,7 @@ textarea {
 }
 .form-button-wrapper {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .form-button:hover,
 .form-button:focus {
