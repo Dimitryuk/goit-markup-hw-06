@@ -673,8 +673,9 @@ address {
   border-color: var(--accent-color);
   outline: none;
 }
-*/
-
+.checkbox:focus-within + .checkbox-icon {
+  border: 2px solid var(--accent-color);
+}
 /* Формы */
 .footer-form {
   display: flex;
