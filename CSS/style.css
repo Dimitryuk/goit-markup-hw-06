@@ -640,7 +640,6 @@ address {
   width: 448px;
   height: 40px;
   padding-left: 40px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition-property: border;
@@ -648,16 +647,16 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-modal {
+.label-wrapper {
   position: relative;
 }
 .form-name {
 }
 .form-icon-modal {
   position: absolute;
-  top: 60%;
-  right: 425px;
-
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
   fill: #212121;
 }
 .modal-window-form {
@@ -666,13 +665,15 @@ address {
   flex-direction: column;
   justify-content: center;
 }
-.form-field-modal:focus-within > .form-icon-modal {
+
+.form-input-modal:focus-within + .form-icon-modal {
   fill: var(--accent-color);
 }
-.form-field-modal:focus-within > .form-input-modal {
+.form-input-modal:focus-within {
   border-color: var(--accent-color);
   outline: none;
 }
+*/
 
 /* Формы */
 .footer-form {

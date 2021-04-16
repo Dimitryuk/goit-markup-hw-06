@@ -396,34 +396,42 @@
     <div class="modal">
         <h2 class="modal-window-title">Оставьте свои данные, мы вам перезвоним</h2>
        
-        <form class="modal-window-form" autocomplete="off">
+        <form autocomplete="off" class="modal-window-form">
            
-            <label class="form-field-modal" >
+            
+            <label class="form-field-modal">
                 <span class="form-name">Имя</span>
-                <input class="form-input-modal" type="text" name="name" placeholder=" " autocomplete="off">
+                <div class="label-wrapper">
+                <input class="form-input-modal" type="text" name="name" placeholder=" " >
                 <svg class="form-icon-modal" width=12 height=12>
                     <use href="./images/icons.svg#icon-modal-user"></use>
                 </svg>
                 
                 
             </label>
+            </div>
 
+           
             <label class="form-field-modal">
                 <span class="form-name">Телефон</span>
+                <div class="label-wrapper">
                 <input class="form-input-modal" type="tel" name="tel" placeholder=" ">
                 <svg class="form-icon-modal" width=13 height=13>
                     <use href="./images/icons.svg#icon-modal-phone"></use>
                 </svg>
             </label>
+            </div>
 
+            
             <label class="form-field-modal">
                 <span class="form-name">Почта</span>
+                <div class="label-wrapper">
                 <input class="form-input-modal" type="email" name="email" placeholder=" ">
                 <svg class="form-icon-modal" width=15 height=12>
                     <use href="./images/icons.svg#icon-modal-envelope"></use>
                 </svg>
             </label>
-            
+            </div>
             <label class="comments-field-modal" >
                 <span class="form-name">Комментарий</span>
                 <textarea name="feedback" rows="5" placeholder="Введите текст" ></textarea>
